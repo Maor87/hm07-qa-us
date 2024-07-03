@@ -59,8 +59,7 @@ test('Adding groceries to the cart', async () => {
 	console.log(cart);
 	let cartID = cart["id"];
 
-    try {
-		
+    try {	
 		 const response = await fetch(`${config.API_URL}/api/v1/orders/${cartID}`, {
 			method: 'PUT',
 			headers: {
