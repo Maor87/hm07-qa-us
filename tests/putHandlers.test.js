@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+
 const config = require('../config');
 
 const requestBody = {
@@ -50,13 +50,12 @@ test('Adding groceries to the cart', async () => {
         },
         body: JSON.stringify(requestBody)
     });
-
+ 
     
   } catch (error) {
     console.error(error);
   }
   let cart = await createResponse.json();
-  console.log(cart);
   let cartID = cart["id"];
 
   try {	

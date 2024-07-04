@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+
  const config = require('../config');
 
  test('Get a list of warehouses', async () => {
@@ -7,6 +7,7 @@
 
   try {
   response = await fetch(`${config.API_URL}/api/v1/warehouses`);
+  actualStatus = response.status;
   } catch (error) {
   console.error(error);
   }

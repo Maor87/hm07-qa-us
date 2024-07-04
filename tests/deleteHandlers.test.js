@@ -1,4 +1,4 @@
-// eslint-disable-next-line no-undef
+
 const config = require('../config');
 
 test('Deleting the kit', async () => {
@@ -7,9 +7,8 @@ test('Deleting the kit', async () => {
       method: 'DELETE',
     });
 
-    const deleted = await response.json();
     expect(response.status).toBe(200);
-    console.log(deleted);
+   
   } catch (error) {
     console.error(error);
   }
