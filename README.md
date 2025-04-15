@@ -1,4 +1,4 @@
-# Urban Grocers Spint-7 Project
+# Urban Grocers (TripleTen Bootcamp Project)
 
 # Description: 
 Writing test scripts using HTTP: GET, POST, PUT, DELETE, to checking info for testing of Urban Grocers items. 
